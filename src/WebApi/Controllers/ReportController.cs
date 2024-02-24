@@ -18,7 +18,7 @@ namespace WebApi.Controllers
             _reportService = reportService;
         }
 
-        [HttpGet("{brokerCode}/customers")]
+        [HttpGet("proper-api-route")]
         [ProducesResponseType(typeof(FileResult), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public FileResult GetCustomers(string brokerCode)
